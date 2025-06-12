@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<title>Magic The Gathering survey</title>
+	</head>
+	<body>
+		<h1 id="title">Magic The Gathering survey</h1>
+		<p id="description">Thank you for taking the time to tell us how you play Magic The Gathering</p>
+		<form id="survey-form">
+			<label id="name-label" for="name">Name:</label>
+			<input id="name" type="text" name="name" placeholder="Enter your name" required>
+			<label id="email-label" for="email">Email:</label>
+			<input id="email" type="email" name="email" placeholder="Enter your email" required>
+			<label id="number-label" for="number">How many tournaments do you enter a year?:</label>
+			<input id="number" type="number" min="0" max="365" name="numberoftournaments"
+				placeholder="Enter the number of tournaments">
+			<label for="dropdown">Favorite format:</label>
+			<select id="dropdown" name="favoriteformat">
+				<option value="standand">Standard</option>
+				<option value="commander">Commander</option>
+				<option value="boosterdraft">Booster Draft</option>
+				<option value="pioneer">Pioneer</option>
+				<option value="modern">Modern</option>
+			</select>
+			<fieldset id="favplatform">
+				<legend>Favorite platform:</legend>
+				<div>
+					<input id="tabletop" type="radio" name="platform" value="tabletop">
+					<label for="tabletop">Tabletop</label>
+				</div>
+				<div>
+					<input id="arena" type="radio" name="platform" value="arena">
+					<label for="arena">Magic The Gathering Arena</label>
+				</div>
+				<div>
+					<input id="online" type="radio" name="platform" value="online">
+					<label for="online">Magic The Gathering Online</label>
+				</div>
+				<div>
+					<input id="spelltable" type="radio" name="platform" value="spelltable">
+					<label for="spelltable">SpellTable</label>
+				</div>
+			</fieldset>
+			<fieldset id="favcolors">
+				<legend>What is/are your favorite color(s) to play?:</legend>
+				<div>
+					<input id="red" type="checkbox" name="color" value="red">
+					<label for="red">Red</label>
+				</div>
+				<div>
+					<input id="green" type="checkbox" name="color" value="green">
+					<label for="green">Green</label>
+				</div>
+				<div>
+					<input id="blue" type="checkbox" name="color" value="blue">
+					<label for="blue">Blue</label>
+				</div>
+				<div>
+					<input id="black" type="checkbox" name="color" value="black">
+					<label for="black">Black</label>
+				</div>
+				<div>
+					<input id="white" type="checkbox" name="color" value="white">
+					<label for="white">White</label>
+				</div>
+			</fieldset>
+			<label for="textarea">Anything you would like to add?:</label>
+			<textarea id="textarea"></textarea>
+			<input id="submit" type="submit">
+		</form>
+	</body>
+</html>

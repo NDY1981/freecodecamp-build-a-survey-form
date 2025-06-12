@@ -1,0 +1,70 @@
+body {
+	background-color: #4a96d2;
+	color: white;
+}
+
+#title {
+	text-align: center;
+}
+
+#description {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+form {
+	width: 350px;
+	margin: 50px auto;
+	border: 1px solid white;
+	border-radius: 25px;
+	padding: 15px;
+}
+
+legend,
+form>label {
+	font-size: 1.1rem;
+}
+
+label[id="name-label"],
+label[id="email-label"],
+label[id="number-label"],
+label[for="dropdown"],
+label[for="textarea"] {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+input[id="name"],
+input[id="email"],
+input[id="number"],
+#dropdown {
+	display: block;
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#textarea {
+	width: 250px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+#favplatform {
+	margin-top: 15px;
+	border: none;
+}
+
+#favcolors {
+	margin-top: 15px;
+	border: none;
+}
+
+#submit {
+	display: block;
+	font-size: 1.1rem;
+	width: 100px;
+	height: 28px;
+	margin: 10px auto;
+}
